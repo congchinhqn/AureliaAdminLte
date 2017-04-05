@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 var del = require('del');
 
 function clean() {
@@ -18,7 +19,6 @@ function copyDist() {
 }
 
 function copyScripts() {
-
   return gulp.src(['scripts/**/*']).pipe(gulp.dest('__PUBLISH/scripts'));
 }
 
