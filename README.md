@@ -1,2 +1,0 @@
-# AureliaAdminLte
-AureliaAdminLte
