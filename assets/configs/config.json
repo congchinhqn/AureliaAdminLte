@@ -8,19 +8,19 @@
   "development": {
     "api": {
       "key": "developmentonlykey938109283091",
-      "endpoint": "http://adminlte.fxflow.vn"
+      "endpoint": "http://localhost:8080"
     }
   },
   "stagging": {
     "api": {
       "key": "staggingkey938109283091",
-      "endpoint": "http://adminlte.fxflow.vn"
+      "endpoint": "hhttp://localhost:8080"
     }
   },
   "production": {
     "api": {
       "key": "productionkey938109283091",
-      "endpoint": "http://adminlte.fxflow.vn"
+      "endpoint": "http://localhost:8080"
     }
   }
 }
