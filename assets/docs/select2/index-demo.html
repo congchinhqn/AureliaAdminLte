@@ -1,0 +1,58 @@
+<template>
+  <section class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-primary">
+          <div class="box-header">
+            <h3 class="box-title">Demo Tabs</h3>
+          </div>
+          <div class="box-body">
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Minimal value: ${minimalValue}</label>
+                    <select class="form-control select2 select2-hidden-accessible"  style="width: 100%;" 
+                      select2 value.bind="minimalValue">
+                      <option value="">-- Chọn --</option>
+                      <option repeat.for="item of sources" model.bind="item.id" value="${item.id}">${item.text}</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Disabled</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" disabled select2>
+                      <option value="">-- Chọn --</option>
+                      <option repeat.for="item of sources" model.bind="item.id" value="${item.id}">${item.text}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Multiple Value: ${multipleValue}</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;"
+                      multiple data-placeholder="Select a State" value.bind="multipleValue" select2>
+                      <option value="">-- Chọn --</option>
+                      <option repeat.for="item of sources" model.bind="item.id" value="${item.id}">${item.text}</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Disabled Result Value: ${disabledResultValue}</label>
+                    <select class="form-control select2 select2-hidden-accessible"  style="width: 100%;" 
+                      value.bind="disabledResultValue" select2>
+                      <option value="">-- Chọn --</option>
+                      <option repeat.for="item of sources" model.bind="item.id" value="${item.id}" disabled.bind="item.disabled">${item.text}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-footer">
+              Visit
+              <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about the plugin.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

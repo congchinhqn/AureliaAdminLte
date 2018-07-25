@@ -1,0 +1,91 @@
+<template>
+  <section class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-primary">
+          <div class="box-header">
+            <h3 class="box-title">ICheck</h3>
+          </div>
+          <div class="box-body">
+            <div class="form-group">
+              <label>
+                <input type="checkbox" class="minimal" icheck model.bind="icheckValue" checked.bind="icheckValue">${icheckValue}
+              </label>
+              <label>
+                <input type="checkbox" class="minimal" icheck>
+              </label>
+              <label>
+                <input type="checkbox" class="minimal" disabled icheck> Minimal skin checkbox
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="radio" name="r1" class="minimal" checked icheck>
+              </label>
+              <label>
+                <input type="radio" name="r1" class="minimal" icheck>
+              </label>
+              <label>
+                <input type="radio" name="r1" class="minimal" disabled icheck> Minimal skin radio
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="checkbox" class="minimal-red" checked icheck>
+              </label>
+              <label>
+                <input type="checkbox" class="minimal-red" icheck>
+              </label>
+              <label>
+                <input type="checkbox" class="minimal-red" disabled icheck> Minimal red skin checkbox
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="radio" name="r2" class="minimal-red" checked icheck>
+              </label>
+              <label>
+                <input type="radio" name="r2" class="minimal-red" icheck>
+              </label>
+              <label>
+                <input type="radio" name="r2" class="minimal-red" disabled icheck> Minimal red skin radio
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="checkbox" class="flat-red" checked icheck>
+              </label>
+              <label>
+                <input type="checkbox" class="flat-red" icheck>
+              </label>
+              <label>
+                <input type="checkbox" class="flat-red" disabled icheck> Flat green skin checkbox
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="radio" name="r3" class="flat-red" checked icheck>
+              </label>
+              <label>
+                <input type="radio" name="r3" class="flat-red" icheck icheck>
+              </label>
+              <label>
+                <input type="radio" name="r3" class="flat-red" disabled icheck> Flat green skin radio
+              </label>
+            </div>
+
+            <div class="box-footer">
+              Visit
+              <a href="https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic">Ckeditor5 documentation</a> for more examples and information about the plugin.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
